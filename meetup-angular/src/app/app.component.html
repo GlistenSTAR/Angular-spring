@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="/"> {{ title }}</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link home" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+      <ul class="navbar-nav navbar-right">
+        <li><a class="nav-link" [routerLink]="['/registro']">Registro</a></li>
+        <li><a class="nav-link" [routerLink]="['/login']">Iniciar Sesión</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div>
+  <router-outlet></router-outlet>
+</div>
+<app-footer></app-footer>

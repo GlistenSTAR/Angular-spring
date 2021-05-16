@@ -1,0 +1,53 @@
+<section id="cover" class="min-vh-100">
+  <div id="cover-caption">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 col-lg-12 col-md-12 col-sm-12 mx-auto text-left form p-4">
+          <div class="px-2">
+            <form action="" class="justify-content-center">
+              <legend class="display-4 text-center text-primary mt-5">Registro</legend>
+              <div class="form-group mt-5">
+                <!-- <label >Username</label> -->
+                <input type="text" class="form-control form-control-lg" name="username" [(ngModel)]="username" placeholder="nombre de usuario">
+              </div>
+              <div class="form-group">
+                <!-- <label >Email</label> -->
+                <input type="text" class="form-control form-control-lg" name="email" [(ngModel)]="email" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <!-- <label >Password</label> -->
+                <input type="password" class="form-control form-control-lg" name="password" [(ngModel)]="password" placeholder="contraseña">
+              </div>
+              <div class="form-group">
+                <!-- <label >Fecha de nacimiento</label> -->
+                <input input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" class="form-control form-control-lg" name="fechaNacimiento" [(ngModel)]="fechaNacimiento" placeholder="fecha de nacimiento">
+              </div>
+              <div class="form-group">
+                <!-- <label >Password</label> -->
+                <input type="text" class="form-control form-control-lg" name="ciudad" [(ngModel)]="password" placeholder="Ciudad">
+              </div>
+              <!-- <div class="form-group row">
+                <div class="col-sm-12">
+                <mat-form-field class="form-control form-control-lg">
+                  <input type="text"
+                         placeholder="Ciudad"
+                         aria-label="Number"
+                         matInput
+                         [formControl]="autocompliteCiudad"
+                         [matAutocomplete]="auto">
+                  <mat-autocomplete #auto="matAutocomplete" [displayWith]="mostrarNombreCiudad" (optionSelected)="seleccionarCiudad($event)">
+                    <mat-option *ngFor="let ciudad of ciudadesFiltradas | async" [value]="ciudad" class="form-control form-control-lg">
+                      {{ciudad.nombre}}
+                    </mat-option>
+                  </mat-autocomplete>
+                </mat-form-field>
+                </div>
+              </div> -->
+              <button type="submit" class="btn btn-info form-control form-control-lg mt-3" (click)="registrarUsuario()">Aceptar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

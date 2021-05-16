@@ -1,0 +1,13 @@
+.navbar{
+  height: 70px;
+}
+.navbar-brand{
+  font-size: 32px;
+}
+.home{
+  margin-left: 20px;
+  margin-top: auto;
+}
+.nav-link{
+  font-size: 18px;
+}
